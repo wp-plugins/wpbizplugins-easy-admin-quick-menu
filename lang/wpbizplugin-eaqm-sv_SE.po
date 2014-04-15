@@ -1,0 +1,271 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPBizPlugins Easy Admin Quick Menu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-14 15:57+0100\n"
+"PO-Revision-Date: 2014-04-14 15:58+0100\n"
+"Last-Translator: Gabriel <gabbe.nord@gmail.com>\n"
+"Language-Team: WPBizPlugins <gabriel@wpbizplugins.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-SearchPath-0: inc\n"
+
+#: inc/redux-config.php:110
+msgid "Section via hook"
+msgstr ""
+
+#: inc/redux-config.php:111
+msgid "<p class=\"description\">This is a section created by adding a filter to the sections array. Can be used by child themes to add/remove sections from the options.</p>"
+msgstr ""
+
+#: inc/redux-config.php:159
+msgid "Menu configuration"
+msgstr "Menykonfigurering"
+
+#: inc/redux-config.php:160
+msgid "Configure the menu here."
+msgstr "Konfigurera menyn här."
+
+#: inc/redux-config.php:173
+msgid "Menu title"
+msgstr "Menytitel"
+
+#: inc/redux-config.php:174
+msgid "The title of the dashboard widget containing the menu."
+msgstr "Titeln på behållaren i instrumentpanelen som håller menyn."
+
+#: inc/redux-config.php:181
+msgid "Welcome text"
+msgstr "Välkomsttext"
+
+#: inc/redux-config.php:182
+msgid "The welcome text for the menu. Appears before the actual menu."
+msgstr "Välkomsttexten för menyn. Dyker upp före själva menyn."
+
+#: inc/redux-config.php:184
+msgid "Keep your descriptive texts short and informative. Example of a welcome text for a client:"
+msgstr "Håll dina beskrivande texter korta och informativa. Exempel på en välkomsttext för en klient:"
+
+#: inc/redux-config.php:184
+msgid "Use the menu below to administer your website."
+msgstr "Använd menyn här under för att administrera din hemsida."
+
+#: inc/redux-config.php:197
+msgid "Visual configuration"
+msgstr "Visuell konfiguration"
+
+#: inc/redux-config.php:198
+msgid "Configure how the menu and menu entries look."
+msgstr "Konfigurera hur menyn ser ut."
+
+#: inc/redux-config.php:211
+msgid "Size of the icons"
+msgstr "Storlek på ikonerna"
+
+#: inc/redux-config.php:212
+msgid "Control the size of the icons displayed on the menu buttons."
+msgstr "Kontrollera storleken på ikonerna som visas på menyknapparna."
+
+#: inc/redux-config.php:213
+#: inc/redux-config.php:226
+#: inc/redux-config.php:239
+#: inc/redux-config.php:272
+msgid "Default:"
+msgstr "Standard:"
+
+#: inc/redux-config.php:224
+msgid "Size of the title text"
+msgstr "Storlek på titeltexten"
+
+#: inc/redux-config.php:225
+msgid "Control the size of the title text displayed on the menu buttons."
+msgstr "Kontrollera storleken på titeltexten på menyknapparna."
+
+#: inc/redux-config.php:237
+msgid "Vertical space between buttons"
+msgstr "Vertikalt rum mellan knapparna"
+
+#: inc/redux-config.php:238
+msgid "Control the vertical space between the buttons."
+msgstr "Kontrollera det vertikala mellanrummet mellan knapparna."
+
+#: inc/redux-config.php:270
+msgid "Rounding of button corners"
+msgstr "Hörnrundning"
+
+#: inc/redux-config.php:271
+msgid "Control the rounding of the button corners."
+msgstr "Kontrollera hur rundade hörnen på knapparna är."
+
+#: inc/redux-config.php:285
+msgid "Warning"
+msgstr "Varning"
+
+#: inc/redux-config.php:286
+msgid "Only edit the custom CSS if you know what you are doing."
+msgstr "Redigera bara den egna CSS-koden om du vet vad du håller på med."
+
+#: inc/redux-config.php:292
+msgid "Custom CSS Code"
+msgstr "Egen CSS-kod"
+
+#: inc/redux-config.php:293
+msgid "Put your custom CSS code here."
+msgstr "Skriv din egna CSS-kod här."
+
+#: inc/redux-config.php:297
+msgid "Available CSS selectors"
+msgstr "Tillgängliga CSS-selektorer"
+
+#: inc/redux-config.php:298
+msgid "The dashboard widget holding the entire menu."
+msgstr "Behållaren på instrumentpanelen som håller hela menyn."
+
+#: inc/redux-config.php:299
+msgid "All the buttons have this class."
+msgstr "Alla knappar har denna klass."
+
+#: inc/redux-config.php:300
+msgid "All the icons have this class."
+msgstr "Alla ikoner har denna klass."
+
+#: inc/redux-config.php:313
+msgid "Import / Export"
+msgstr "Importera / Exportera"
+
+#: inc/redux-config.php:314
+msgid "Import and Export the menu settings from file, text or URL."
+msgstr "Importera och exportera menyinställningar från fi, text eller URL."
+
+#: inc/redux-config.php:332
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: inc/redux-config.php:375
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#: inc/redux-config.php:376
+msgid "Easy Admin Quick Menu Options"
+msgstr "Easy Admin Quick Meny alternativ"
+
+#: inc/redux-config.php:456
+msgid "Welcome to the Easy Admin Quick Menu configuration. Configure everything needed for the display of the menu here."
+msgstr "Välkommen till konfigurationen av Easy Admin Quick Menu. Konfigurera allt du behöver för menyn här."
+
+#: inc/custom-posttypes.php:38
+msgid "Menu buttons"
+msgstr "Menyknappar"
+
+#: inc/custom-posttypes.php:39
+msgid "Menu button"
+msgstr "Menyknapp"
+
+#: inc/custom-posttypes.php:40
+#: inc/custom-posttypes.php:41
+msgid "Add new menu button"
+msgstr "Lägg till ny menyknapp"
+
+#: inc/custom-posttypes.php:42
+msgid "Edit menu button"
+msgstr "Redigera menyknapp"
+
+#: inc/custom-posttypes.php:43
+msgid "New menu button"
+msgstr "Ny menyknapp"
+
+#: inc/custom-posttypes.php:44
+msgid "All menu buttons"
+msgstr "Alla menyknappar"
+
+#: inc/custom-posttypes.php:45
+msgid "See menu buttons"
+msgstr "Se menyknappar"
+
+#: inc/custom-posttypes.php:46
+msgid "Search menu"
+msgstr "Sök i menyn"
+
+#: inc/custom-posttypes.php:47
+msgid "No menu button found"
+msgstr "Ingen menyknapp hittades"
+
+#: inc/custom-posttypes.php:48
+msgid "No menu buttons found in the trash"
+msgstr "Inga menyknappar hittades i papperskorgen"
+
+#: inc/custom-posttypes.php:215
+#: inc/custom-posttypes.php:216
+#: inc/custom-posttypes.php:217
+#: inc/custom-posttypes.php:218
+msgid "Menu button updated."
+msgstr "Menyknapp uppdaterad"
+
+#: inc/custom-posttypes.php:221
+#: inc/custom-posttypes.php:223
+msgid "Menu button added."
+msgstr "Menyknapp tillagd."
+
+#: inc/custom-posttypes.php:222
+msgid "Menu button saved."
+msgstr "Menyknapp sparad."
+
+#: inc/custom-posttypes.php:227
+msgid "Draft of menu button saved."
+msgstr "Utkast av menyknapp sparat."
+
+#: inc/custom-posttypes.php:269
+msgid "You can add a short description of what the button does here. The contents of this field gets displayed under the title on the button."
+msgstr "Du kan skriva en kort beskrivning av vad knappen gör här. Innehållet här visas under titeln på knappen."
+
+#: inc/custom-posttypes.php:281
+msgid "Put the URL you want to link to here."
+msgstr "Skriv den URL du vill länka till här."
+
+#: inc/custom-posttypes.php:281
+msgid "<em>Tip:</em> Right-click and select Copy Link Location or similarly on any link in the admin menu to get the URL for that specific page."
+msgstr "<em>Tips:</em> Högerklicka och välj Kopiera länkadress eller liknande på vilken länk som helst i adminmenyn för att få URL:en till den specifika sidan."
+
+#: inc/custom-posttypes.php:294
+msgid "Select the button color that you want for this entry."
+msgstr "Välj knappfärg."
+
+#: inc/custom-posttypes.php:306
+msgid "Choose an icon for your button below."
+msgstr "Välj ikon."
+
+#: inc/custom-posttypes.php:318
+msgid "All done!"
+msgstr "Allt klart!"
+
+#: inc/custom-posttypes.php:370
+msgid "Fill in the fields on this page, select your button color and select an icon. Then simply press publish and you have a shiny new button for your quick menu!"
+msgstr "Fyll i fälten, välj knappfärg och välj en ikon. Tryck sedan på publicera och du har skapat dig en skinande ny knappt till din snabbmeny!"
+
+#: inc/custom-posttypes.php:372
+msgid "Title"
+msgstr "Titel"
+
+#: inc/custom-posttypes.php:372
+msgid "Enter the title of your button here."
+msgstr "Skriv titeln på din knapp här."
+
+#~ msgid ""
+#~ "Try keeping your descriptive texts short and informative so as much of "
+#~ "the menu as possible ends up \"above the fold\". In other words, do not "
+#~ "do what I did in the example... ;)"
+#~ msgstr ""
+#~ "Försök att hålla dina deskriptiva texter korta och informativa så så "
+#~ "mycket av menyn som möjligt kommer \"över folden\". Med andra ord, gör "
+#~ "inte som jag gjorde i exemplet... ;)"
+
+#~ msgid "Menu elements"
+#~ msgstr "Menyknappar"
+
+#~ msgid "Menu element"
+#~ msgstr "Menyknapp"
