@@ -3,7 +3,7 @@ Contributors: wpbizplugins
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MF5MU4TNF3UDU&lc=SE&item_name=WPBizPlugins&item_number=Easy%20Admin%20Quick%20Menu&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: admin, quick menu, admin menu, quick, menu, client menu, simplify wordpress, simple, wpbizplugins
 Requires at least: 3.7
-Tested up to: 3.8.2
+Tested up to: 3.9
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
