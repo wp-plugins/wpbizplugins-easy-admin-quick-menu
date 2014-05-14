@@ -25,6 +25,11 @@ Text Domain: wpbizplugins-eaqm
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
+
+    ini_set('display_errors', 1);
+
+// Enable error reporting for NOTICES
+error_reporting(E_NOTICE);
 /**
  *
  * Register activation hook for the plugin, that adds the default menu settings if necessary.
@@ -52,6 +57,7 @@ if( is_admin() ) {
         require_once( dirname( __FILE__ ) . '/assets/acf/acf.php' );
         
     }
+    
 
     // Include Redux if plugin isn't available
     if ( ! class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/assets/redux/ReduxCore/framework.php' ) ) {
@@ -59,16 +65,19 @@ if( is_admin() ) {
         require_once( dirname( __FILE__ ) . '/assets/redux/ReduxCore/framework.php' );
 
     }
+
     require_once( dirname( __FILE__ ) . '/inc/redux-config.php' );
 
+    
     function wpbizplugins_eaqm_load_hicpo() {
+
         require_once( dirname( __FILE__ ) . '/assets/icpo/intuitive-custom-post-order.php' );
+
     }
 
     add_action( 'plugins_loaded', 'wpbizplugins_eaqm_load_hicpo' );
 
 }
-   
 
 require_once( dirname( __FILE__ ) . '/inc/install.php' );                  // Import the installation functions
 require_once( dirname( __FILE__ ) . '/inc/custom-functions.php' );         // Import our custom functions first

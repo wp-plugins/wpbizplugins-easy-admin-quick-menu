@@ -52,7 +52,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
             
             // Function to test the compiler hook and demo CSS output.
             // Above 10 is a priority, but 2 in necessary to include the dynamically generated CSS to be sent to the function.
-            //add_filter('redux/options/'.$this->args['opt_name'].'/compiler', array( $this, 'compiler_action' ), 10, 2);
+            //add_filter('redux/options/'.$this->args['opt_name'].'/compiler', array( $this, 'compiler_action' ), 10, 3);
             
             // Change the arguments after they've been declared, but before the panel is created
             //add_filter('redux/options/'.$this->args['opt_name'].'/args', array( $this, 'change_arguments' ) );
@@ -72,8 +72,11 @@ if (!class_exists('Redux_Framework_sample_config')) {
           It only runs if a field	set with compiler=>true is changed.
 
          * */
-        function compiler_action($options, $css) {
-            //echo '<h1>The compiler hook has run!';
+        function compiler_action($options, $css, $changed_values) {
+            echo '<h1>The compiler hook has run!</h1>';
+            echo "<pre>";
+            print_r($changed_values); // Values that have changed since the last save
+            echo "</pre>";
             //print_r($options); //Option values
             //print_r($css); // Compiler selector CSS values  compiler => array( CSS SELECTORS )
 
@@ -385,7 +388,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
                     ),
                     array(
                         'id'        => 'switch-off',
-                        'type'      => 'checkbox',
+                        'type'      => 'switch',
                         'title'     => __('Switch Off', 'redux-framework-demo'),
                         'subtitle'  => __('Look, it\'s on!', 'redux-framework-demo'),
                         //'options' => array('on', 'off'),
@@ -394,7 +397,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
                     array(
                         'id'        => 'switch-parent',
                         'type'      => 'switch',
-                        'title'     => __('Switch - Custom Titles', 'redux-framework-demo'),
+                        'title'     => __('Switch - Nested Children, Enable to show', 'redux-framework-demo'),
                         'subtitle'  => __('Look, it\'s on! Also hidden child elements!', 'redux-framework-demo'),
                         'default'   => 0,
                         'on'        => 'Enabled',
@@ -404,7 +407,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
                         'id'        => 'switch-child1',
                         'type'      => 'switch',
                         'required'  => array('switch-parent', '=', '1'),
-                        'title'     => __('Switch - With Hidden Items (NESTED!)', 'redux-framework-demo'),
+                        'title'     => __('Switch - This and the next switch required for patterns to show', 'redux-framework-demo'),
                         'subtitle'  => __('Also called a "fold" parent.', 'redux-framework-demo'),
                         'desc'      => __('Items set with a fold to this ID will hide unless this is set to the appropriate value.', 'redux-framework-demo'),
                         'default'   => false,
@@ -413,7 +416,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
                         'id'        => 'switch-child2',
                         'type'      => 'switch',
                         'required'  => array('switch-parent', '=', '1'),
-                        'title'     => __('Switch2 - With Hidden Items (NESTED!)', 'redux-framework-demo'),
+                        'title'     => __('Switch2 - Enable the above switch and this one for patterns to show', 'redux-framework-demo'),
                         'subtitle'  => __('Also called a "fold" parent.', 'redux-framework-demo'),
                         'desc'      => __('Items set with a fold to this ID will hide unless this is set to the appropriate value.', 'redux-framework-demo'),
                         'default'   => false,
@@ -423,8 +426,8 @@ if (!class_exists('Redux_Framework_sample_config')) {
                         'type'      => 'image_select',
                         'tiles'     => true,
                         'required'  => array(
+                                            array('switch-child1', 'equals', 1),
                                             array('switch-child2', 'equals', 1),
-                                            array('switch-off', 'equals', 1),
                                        ),
                         'title'     => __('Images Option (with pattern=>true)', 'redux-framework-demo'),
                         'subtitle'  => __('Select a background pattern.', 'redux-framework-demo'),
@@ -494,8 +497,8 @@ if (!class_exists('Redux_Framework_sample_config')) {
                         'default'   => 0,
                         'desc'      => __('This allows you to set a json string or array to override multiple preferences in your theme.', 'redux-framework-demo'),
                         'options'   => array(
-                            '1'         => array('alt' => 'Preset 1', 'img' => ReduxFramework::$_url . '../sample/presets/preset1.png', 'presets' => array('switch-on' => 1, 'switch-off' => 1, 'switch-custom' => 1)),
-                            '2'         => array('alt' => 'Preset 2', 'img' => ReduxFramework::$_url . '../sample/presets/preset2.png', 'presets' => '{"slider1":"1", "slider2":"0", "switch-on":"0"}'),
+                            '1'         => array('alt' => 'Preset 1', 'img' => ReduxFramework::$_url . '../sample/presets/preset1.png', 'presets' => array('switch-on' => 1, 'switch-off' => 1, 'switch-parent' => 1)),
+                            '2'         => array('alt' => 'Preset 2', 'img' => ReduxFramework::$_url . '../sample/presets/preset2.png', 'presets' => '{"opt-slider-label":"1", "opt-slider-text":"10"}'),
                         ),
                     ),
                     array(
@@ -525,7 +528,6 @@ if (!class_exists('Redux_Framework_sample_config')) {
                             'google'        => true,
                             'font-size'     => '33px',
                             'line-height'   => '40px'),
-                        'preview' => array('text' => 'ooga booga'),
                     ),
                 ),
             );
@@ -613,6 +615,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
             $this->sections[] = array(
                 'icon'      => 'el-icon-website',
                 'title'     => __('Styling Options', 'redux-framework-demo'),
+                'subsection' => true,
                 'fields'    => array(
                     array(
                         'id'        => 'opt-select-stylesheet',
@@ -1051,9 +1054,9 @@ if (!class_exists('Redux_Framework_sample_config')) {
                         'subtitle'  => __('Define and reorder these however you want.', 'redux-framework-demo'),
                         'desc'      => __('This is the description field, again good for additional info.', 'redux-framework-demo'),
                         'options'   => array(
-                            'si1' => 'Item 1',
-                            'si2' => 'Item 2',
-                            'si3' => 'Item 3',
+                            'si1' => false,
+                            'si2' => true,
+                            'si3' => false,
                         )
                     ),
                 )
@@ -1330,7 +1333,6 @@ if (!class_exists('Redux_Framework_sample_config')) {
                     array(
                         'id'        => 'opt-info-field',
                         'type'      => 'info',
-                        'required'  => array('18', 'equals', array('1', '2')),
                         'desc'      => __('This is the info field, if you want to break sections up.', 'redux-framework-demo')
                     ),
                     array(
@@ -1505,7 +1507,9 @@ if (!class_exists('Redux_Framework_sample_config')) {
                 'global_variable'   => '',                      // Set a different name for your global variable other than the opt_name
                 'dev_mode'          => true,                    // Show the time the page took to load, etc
                 'customizer'        => true,                    // Enable basic customizer support
-                
+                //'open_expanded'     => true,                    // Allow you to start the panel in an expanded way initially.
+                //'disable_save_warn' => true,                    // Disable the save warning when a user changes a field
+
                 // OPTIONAL -> Give you extra features
                 'page_priority'     => null,                    // Order where the menu appears in the admin area. If there is any conflict, something will not show. Warning.
                 'page_parent'       => 'themes.php',            // For a full list of options, visit: http://codex.wordpress.org/Function_Reference/add_submenu_page#Parameters

@@ -20,8 +20,8 @@ if (!class_exists('WPBizPlugins_EasyAdminQuickMenu_Config')) {
                 return;
             }
 
-            // This is needed. Bah WordPress bugs.  ;)
-            if (true == Redux_Helpers::isChildTheme() || true == Redux_Helpers::isParentTheme()) {
+            // This is needed. Bah WordPress bugs. ;)
+            if ( true == Redux_Helpers::isTheme(__FILE__) ) {
                 $this->initSettings();
             } else {
                 add_action('plugins_loaded', array($this, 'initSettings'), 10);
@@ -151,7 +151,7 @@ if (!class_exists('WPBizPlugins_EasyAdminQuickMenu_Config')) {
             }
         }
 
-        public function setSections() {            
+        public function setSections() {
 
             // ACTUAL DECLARATION OF SECTIONS
             
@@ -456,7 +456,7 @@ if (!class_exists('WPBizPlugins_EasyAdminQuickMenu_Config')) {
             $this->args['intro_text'] = '<img src="' . plugins_url( '../assets/img/wpbizplugins-eaqm-logo.png', __FILE__ ) . '"><p>' . __('Welcome to the Easy Admin Quick Menu configuration. Configure everything needed for the display of the menu here.', 'wpbizplugins-eaqm') . '</p>';
 
             // Add content after the form.
-            $this->args['footer_text'] = '<a href="http://www.wpbizplugins.com" target="_blank"><img style="margin-top: 20px; margin-bottom: 20px;" src="' . plugins_url( '../assets/img/wpbizplugins-footer-img.png', __FILE__ ) . '"></a>';
+            $this->args['footer_text'] = '<a href="http://www.wpbizplugins.com?utm_source=eaqm&utm_medium=plugin&utm_campaign=eaqm" target="_blank"><img style="margin-top: 20px; margin-bottom: 20px;" src="' . plugins_url( '../assets/img/wpbizplugins-footer-img.png', __FILE__ ) . '"></a>';
         }
 
     }
