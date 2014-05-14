@@ -286,6 +286,16 @@ function wpbizplugins_eaqm_load_custom_fields() {
                     'formatting' => 'none',
                     'maxlength' => '',
                 ),
+                array ( 
+                    'key' => 'field_new_window',
+                    'label' => __('Open in new window?', 'wpbizplugins-eaqm'),
+                    'name' => 'target_blank',
+                    'type' => 'true_false',
+                    'instructions' => __('Select this if you want the link to open in a new window.', 'wpbizplugins-eaqm'),
+                    'message' => '',
+                    'default_value' => 0,
+            
+                ),
                 array (
                     'key' => 'field_53419704872f0',
                     'label' => 'Button color',

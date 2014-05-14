@@ -52,13 +52,14 @@ function wpbizplugins_eaqm_print_button_style( $color_name, $color_main, $color_
  * @param string $title Title of the button.
  * @param string $subtitle Subtitle/description of the button
  * @param string $url URL for the link.
+ * @param bool $target_blank Open in new window or not? Returns 1 or 0.
  * @param bool $should_return_string Return or print the string? Print if false, return if true.
  * @return string The style properly printed.
  * @since 1.0
  *
  */
 
-function wpbizplugins_eaqm_print_button( $color, $icon, $title, $subtitle, $url, $should_return_string = false, $container = 'a' ) {
+function wpbizplugins_eaqm_print_button( $color, $icon, $title, $subtitle, $url, $target_blank, $should_return_string = false, $container = 'a' ) {
 
     global $wpbizplugins_eaqm_options;
 
@@ -69,11 +70,14 @@ function wpbizplugins_eaqm_print_button( $color, $icon, $title, $subtitle, $url,
     // Print the initial style needed
     $return_string = '<style>#' . $css_id . ':before { content: "\f' . $icon . '" !important; }</style>';
 
-
-
     // Print the actual button
     $return_string .= 
-    '<' . $container . ' href="' . $url . '" class="wpbizplugins-eaqm-button btn-' . $color . '">' .
+    '<' . $container . ' href="' . $url . '"';
+
+    // Add a target blank if necessary
+    if( $target_blank == 1 ) $return_string .= ' target="_blank"';
+
+    $return_string .= ' class="wpbizplugins-eaqm-button btn-' . $color . '">' .
     '<span class="wpbizplugins-eaqm-icon" id="' . $css_id . '"><br /></span>' .
     '<p style="margin: 3px 3px 3px 3px;"><strong style="font-size: ' . $wpbizplugins_eaqm_options['font_size'] . 'pt;">' . $title . '</strong></p>'. $subtitle . '' .
     '</'. $container . '>';

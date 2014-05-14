@@ -66,12 +66,12 @@ function wpbizplugins_eaqm_widget_function() {
             $title = get_the_title($menu_element_id);
             $subtitle = get_post_meta( $menu_element_id, 'subtitle', true );
             $url = get_post_meta( $menu_element_id, 'url', true );
+            $target_blank = get_post_meta( $menu_element_id, 'target_blank', true );
             $icon = get_post_meta( $menu_element_id, 'icon', true );
             $button_color = get_post_meta( $menu_element_id, 'button_color', true );
 
             // Print the button
-            wpbizplugins_eaqm_print_button( $button_color, $icon, $title, $subtitle, $url );
-
+            wpbizplugins_eaqm_print_button( $button_color, $icon, $title, $subtitle, $url, $target_blank );
         }
 
     }

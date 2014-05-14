@@ -1,9 +1,9 @@
 /* global redux_change */
 /**
  * Typography
- * Dependencies		: google.com, jquery
- * Feature added by : Dovy Paukstys - http://simplerain.com/
- * Date				: 06.14.2013
+ * Dependencies:        google.com, jquery
+ * Feature added by:    Dovy Paukstys - http://simplerain.com/
+ * Date:                06.14.2013
  */
 jQuery.noConflict();
 /** Fire up jQuery - let's dance!
@@ -39,6 +39,8 @@ jQuery(document).ready(function($) {
         var letter = $('#' + mainID + ' .redux-typography-letter').val(); // New Letter-Spacing
         var align = $('#' + mainID + ' select.redux-typography-align').val(); // text-align
         var transform = $('#' + mainID + ' select.redux-typography-transform').val();
+		var fontVariant = $('#' + mainID + ' select.redux-typography-font-variant').val(); // New Font Variant
+		var decoration = $('#' + mainID + ' select.redux-typography-decoration').val(); // New Text Decoration
         var style = $('#' + mainID + ' select.redux-typography-style').val();
         var script = $('#' + mainID + ' select.redux-typography-subsets').val();
         var color = $('#' + mainID + ' .redux-typography-color').val();
@@ -61,8 +63,20 @@ jQuery(document).ready(function($) {
             $('#' + mainID).addClass('typography-initialized');
         }
         // Get the styles and such from the font
-        var details = jQuery.parseJSON(decodeURIComponent(option.data('details')));
-        $('#' + mainID + ' .redux-typography-font-options').val(decodeURIComponent(option.data('details')));
+        var details = "";
+
+        // Something went wrong trying to read google fonts, so turn google off
+        if (redux.fonts.google === undefined) {
+            google = false;
+        }
+
+        if (google && ( family in redux.fonts.google)) {
+            details = redux.fonts.google[family];
+        } else if (option.data('details')) {
+            details = jQuery.parseJSON(decodeURIComponent(option.data('details')));
+            $('#' + mainID + ' .redux-typography-font-options').val(decodeURIComponent(option.data('details')));
+        }
+
         // If we changed the font
         if ($(selector).hasClass('redux-typography-family')) {
             var html = '<option value=""></option>';
@@ -94,7 +108,7 @@ jQuery(document).ready(function($) {
                 }
 
                 $('#' + mainID + ' .redux-typography-subsets').html(html);
-                $('#' + mainID + ' .redux-typography-subsets').fadeIn('fast');
+                $('#' + mainID + ' .redux-typography-subsets').parent().fadeIn('fast');
                 $('#' + mainID + ' .typography-family-backup').fadeIn('fast');
             } else {
                 if (details) {
@@ -108,7 +122,7 @@ jQuery(document).ready(function($) {
                         html += '<option value="' + index + '"' + selected + '>' + value.replace('+', ' ') + '</option>';
                     });
                     $('#' + mainID + ' .redux-typography-style').html(html);
-                    $('#' + mainID + ' .redux-typography-subsets').fadeOut('fast');
+                    $('#' + mainID + ' .redux-typography-subsets').parent().fadeOut('fast');
                     $('#' + mainID + ' .typography-family-backup').fadeOut('fast');
                 }
             }
@@ -145,7 +159,7 @@ jQuery(document).ready(function($) {
                     link += '&subset=' + script;
                 }
 
-                if (WebFont) {
+                if (typeof (WebFont) !== "undefined" && WebFont) {
                     WebFont.load({google: {families: [link]}});
                 }
                 //link = 'http://fonts.googleapis.com/css?family=' + link;
@@ -214,6 +228,14 @@ jQuery(document).ready(function($) {
         if (transform) {
             $('#' + mainID + ' .typography-preview').css('text-transform', transform);
         }
+		
+        if (fontVariant) {
+            $('#' + mainID + ' .typography-preview').css('font-variant', fontVariant);
+        }
+		
+        if (decoration) {
+            $('#' + mainID + ' .typography-preview').css('text-decoration', decoration);
+        }
 
     }
     //init for each element
@@ -223,13 +245,14 @@ jQuery(document).ready(function($) {
             jQuery(family).val(family.data('value'));
         }
         typographySelect(family);
+        window.onbeforeunload = null;
     });
     //init when value is changed
     jQuery('.redux-typography').on('change', function() {
         typographySelect(this);
     });
     //init when value is changed
-    jQuery('.redux-typography-size, .redux-typography-height, .redux-typography-word, .redux-typography-letter, .redux-typography-align, .redux-typography-transform').keyup(function() {
+    jQuery('.redux-typography-size, .redux-typography-height, .redux-typography-word, .redux-typography-letter, .redux-typography-align, .redux-typography-transform, .redux-typography-font-variant, .redux-typography-decoration').keyup(function() {
         typographySelect(this);
     });
     // Have to redeclare the wpColorPicker to get a callback function
@@ -249,24 +272,10 @@ jQuery(document).ready(function($) {
         allowMinus: true,
     });
     //jQuery(".redux-typography-family, .redux-typography-style, .redux-typography-subsets").select2({
-    jQuery(".redux-typography-family, .redux-typography-family-backup, .redux-typography-align, .redux-typography-transform").select2({
+    jQuery(".redux-typography-family, .redux-typography-family-backup, .redux-typography-align, .redux-typography-transform, .redux-typography-font-variant, .redux-typography-decoration").select2({
         width: 'resolve',
         triggerChange: true,
         allowClear: true
     });
 
-    jQuery('.redux-typography-qtip').each(function() {
-        $(this).qtip({
-//            text: function(event, api) {
-//                return $(this).attr('qtip-content');
-//            },
-            //text: 'Me',
-            style: 'qtip-tipsy black',
-            position: {
-                my: 'bottom center', // Position my top left...
-                at: 'top center', // at the bottom right of...
-            }
-
-        });
-    });
 });
