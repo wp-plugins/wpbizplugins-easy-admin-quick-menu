@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MF5MU
 Tags: admin, quick menu, admin menu, quick, menu, client menu, simplify wordpress, simple, wpbizplugins
 Requires at least: 3.7
 Tested up to: 3.9.1
-Stable tag: 1.1
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,6 +63,8 @@ Awesome! Shoot me an e-mail at <a href="mailto:support@wpbizplugins.com?subject=
 * Added support for toggling opening button links in new window
 * Fixed minor warnings and notices
 * Upgraded the embedded ReduxFramework to the latest version
+= 1.1.1 =
+* Fixed embarassing include miss with Redux... Sorry!
 
 == Upgrade Notice ==
 
