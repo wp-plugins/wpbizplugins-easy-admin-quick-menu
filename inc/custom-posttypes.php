@@ -302,7 +302,14 @@ function wpbizplugins_eaqm_load_custom_fields() {
                     'name' => 'button_color',
                     'type' => 'radio',
                     'instructions' => __('Select the button color that you want for this entry.', 'wpbizplugins-eaqm'),
-                    'choices' => wpbizplugins_eaqm_return_button_array(),
+                    'choices' => array(
+
+                        'blue'      => 'Blue',
+                        'green'     => 'Green',
+                        'orange'    => 'Orange',
+                        'red'       => 'Red'
+                        
+                        ),
                     'other_choice' => 0,
                     'save_other_choice' => 0,
                     'default_value' => '',
