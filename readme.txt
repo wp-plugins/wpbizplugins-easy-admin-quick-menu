@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MF5MU
 Tags: admin, quick menu, admin menu, quick, menu, client menu, simplify wordpress, simple, wpbizplugins
 Requires at least: 3.7
 Tested up to: 3.9.1
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -65,6 +65,8 @@ Awesome! Shoot me an e-mail at <a href="mailto:support@wpbizplugins.com?subject=
 * Upgraded the embedded ReduxFramework to the latest version
 = 1.1.1 =
 * Fixed embarassing include miss with Redux... Sorry!
+= 1.1.2 =
+* Reverted back from having actual buttons as selectors as that for some reason stopped working. Now using normal radio buttons. Keep It Simple Stupid!
 
 == Upgrade Notice ==
 
