@@ -170,7 +170,7 @@ function wpbizplugins_eaqm_return_button_array() {
 
 function wpbizplugins_eaqm_return_icon_styles () {
 
-    $return_string = '<style>div#acf-icon.field ul.acf-radio-list li label input { display: none; } div#acf-button_color.field ul.acf-radio-list li label input { display: none; } div#acf-button_color.field ul.acf-radio-list li { padding: 5px 5px 5px 8px; margin: 5px 5px 5px 8px; }.wpbizplugins-eaqm-iconmap:after { font: 400 30px/1 dashicons !important; content: "\f100"; margin:10px 10px 10px 10px;} .wpbizplugins-eaqm-iconmap:hover { color: #2EA2CC; }</style>';
+    $return_string = '<style>div#acf-icon.field ul.acf-radio-list li label input { display: none; } .wpbizplugins-eaqm-iconmap:after { font: 400 30px/1 dashicons !important; content: "\f100"; margin:10px 10px 10px 10px;} .wpbizplugins-eaqm-iconmap:hover { color: #2EA2CC; }</style>';
 
     return $return_string;
 
@@ -232,12 +232,6 @@ function wpbizplugins_eaqm_return_jquery_for_icon_select() {
         jQuery('div#acf-icon.field ul.acf-radio-list li label input').click( function(){
             jQuery('div#acf-icon.field ul.acf-radio-list li').removeClass( "wpbizplugins-eaqm-element-selected" );
             jQuery(this).parent().parent().addClass( "wpbizplugins-eaqm-element-selected" );
-        });
-        // Set the jQuery for the button color fields
-        jQuery('div#acf-button_color.field ul.acf-radio-list li [data-checked=""checked""]').parent().parent().addClass( "wpbizplugins-eaqm-button-selected" );
-        jQuery('div#acf-button_color.field ul.acf-radio-list li label input').click( function(){
-            jQuery('div#acf-button_color.field ul.acf-radio-list li').removeClass( "wpbizplugins-eaqm-button-selected" );
-            jQuery(this).parent().parent().addClass( "wpbizplugins-eaqm-button-selected" );
         });
     });
     </script>

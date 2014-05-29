@@ -61,8 +61,7 @@ function wpbizpluins_eaqm_custom_post_menu() {
         'menu_icon'             => plugins_url( '../assets/img/wpbizplugins-eaqm-menuicon.png', __FILE__ ),
         'menu_position'         => null,
         'supports'              => array( 'title' ),
-        'has_archive'           => false,
-        'taxonomies'            => '',//array( 'wpbizplugins-eaqm-sections' ),
+        'has_archive'           => false
     );
     register_post_type( 'wpbizplugins-eaqm', $args );   
 }
@@ -302,7 +301,14 @@ function wpbizplugins_eaqm_load_custom_fields() {
                     'name' => 'button_color',
                     'type' => 'radio',
                     'instructions' => __('Select the button color that you want for this entry.', 'wpbizplugins-eaqm'),
-                    'choices' => wpbizplugins_eaqm_return_button_array(),
+                    'choices' => array(
+
+                        'blue'      => 'Blue',
+                        'green'     => 'Green',
+                        'orange'    => 'Orange',
+                        'red'       => 'Red'
+                        
+                        ),
                     'other_choice' => 0,
                     'save_other_choice' => 0,
                     'default_value' => '',

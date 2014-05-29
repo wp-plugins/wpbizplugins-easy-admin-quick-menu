@@ -3,7 +3,7 @@
 Plugin Name: WPBizPlugins Easy Admin Quick Menu
 Plugin URI: http://www.wpbizplugins.com
 Description: Add a quick menu as a dashboard widget to your WordPress admin section.
-Version: 1.0
+Version: 1.1.3
 Author: Gabriel Nordeborn
 Author URI: http://www.wpbizplugins.com
 Text Domain: wpbizplugins-eaqm
@@ -26,10 +26,7 @@ Text Domain: wpbizplugins-eaqm
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-    ini_set('display_errors', 1);
 
-// Enable error reporting for NOTICES
-error_reporting(E_NOTICE);
 /**
  *
  * Register activation hook for the plugin, that adds the default menu settings if necessary.
