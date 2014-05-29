@@ -61,8 +61,7 @@ function wpbizpluins_eaqm_custom_post_menu() {
         'menu_icon'             => plugins_url( '../assets/img/wpbizplugins-eaqm-menuicon.png', __FILE__ ),
         'menu_position'         => null,
         'supports'              => array( 'title' ),
-        'has_archive'           => false,
-        'taxonomies'            => '',//array( 'wpbizplugins-eaqm-sections' ),
+        'has_archive'           => false
     );
     register_post_type( 'wpbizplugins-eaqm', $args );   
 }
