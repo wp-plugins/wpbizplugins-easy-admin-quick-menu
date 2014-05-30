@@ -170,7 +170,7 @@ function wpbizplugins_eaqm_return_button_array() {
 
 function wpbizplugins_eaqm_return_icon_styles () {
 
-    $return_string = '<style>div#acf-icon.field ul.acf-radio-list li label input { display: none; } div#acf-button_color.field ul.acf-radio-list li label input { display: none; } div#acf-button_color.field ul.acf-radio-list li { padding: 5px 5px 5px 8px; margin: 5px 5px 5px 8px; }.wpbizplugins-eaqm-iconmap:after { font: 400 30px/1 dashicons !important; content: "\f100"; margin:10px 10px 10px 10px;} .wpbizplugins-eaqm-iconmap:hover { color: #2EA2CC; }</style>';
+    $return_string = '<style>div#acf-icon.field ul.acf-radio-list li label input { display: none; } .wpbizplugins-eaqm-iconmap:after { font: 400 30px/1 dashicons !important; content: "\f100"; margin:10px 10px 10px 10px;} .wpbizplugins-eaqm-iconmap:hover { color: #2EA2CC; }</style>';
 
     return $return_string;
 
@@ -233,12 +233,6 @@ function wpbizplugins_eaqm_return_jquery_for_icon_select() {
             jQuery('div#acf-icon.field ul.acf-radio-list li').removeClass( "wpbizplugins-eaqm-element-selected" );
             jQuery(this).parent().parent().addClass( "wpbizplugins-eaqm-element-selected" );
         });
-        // Set the jQuery for the button color fields
-        jQuery('div#acf-button_color.field ul.acf-radio-list li [data-checked=""checked""]').parent().parent().addClass( "wpbizplugins-eaqm-button-selected" );
-        jQuery('div#acf-button_color.field ul.acf-radio-list li label input').click( function(){
-            jQuery('div#acf-button_color.field ul.acf-radio-list li').removeClass( "wpbizplugins-eaqm-button-selected" );
-            jQuery(this).parent().parent().addClass( "wpbizplugins-eaqm-button-selected" );
-        });
     });
     </script>
     <?php
@@ -248,4 +242,78 @@ function wpbizplugins_eaqm_return_jquery_for_icon_select() {
 
     return $return_string;
 
+}
+
+/**
+ * Return array of capabilities for use with restricting access to editing the plugin contents.
+ *
+ * @return array Returns an array of all available capabilities.
+ * @since 1.2
+ *
+ */
+
+function wpbizplugins_eaqm_return_capabilities_array() {
+
+    $capabilities_array = array(
+        'activate_plugins',
+        'add_users',
+        'create_users',
+        'delete_others_pages',
+        'delete_others_posts',
+        'delete_pages',
+        'delete_plugins',
+        'delete_posts',
+        'delete_private_pages',
+        'delete_private_posts',
+        'delete_published_pages',
+        'delete_published_posts',
+        'delete_themes',
+        'delete_users',
+        'edit_dashboard',
+        'edit_others_pages',
+        'edit_others_posts',
+        'edit_pages',
+        'edit_plugins',
+        'edit_posts',
+        'edit_private_pages',
+        'edit_private_posts',
+        'edit_published_pages',
+        'edit_published_posts',
+        'edit_theme_options',
+        'edit_themes',
+        'edit_users',
+        'export',
+        'import',
+        'install_plugins',
+        'install_themes',
+        'list_users',
+        'manage_categories',
+        'manage_links',
+        'manage_options',
+        'moderate_comments',
+        'promote_users',
+        'publish_pages',
+        'publish_posts',
+        'read',
+        'read_private_pages',
+        'read_private_posts',
+        'remove_users',
+        'switch_themes',
+        'unfiltered_html',
+        'unfiltered_upload',
+        'update_core',
+        'update_plugins',
+        'update_themes',
+        'upload_files'
+    );
+
+    $capabilities_array_keypair = array();
+
+    foreach( $capabilities_array as $capability ) {
+
+        $capabilities_array_keypair[$capability] = $capability;
+
+    }
+
+    return $capabilities_array_keypair;
 }

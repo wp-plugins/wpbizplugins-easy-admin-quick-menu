@@ -45,7 +45,7 @@ function wpbizplugins_eaqm_widget_function() {
 
     global $wpbizplugins_eaqm_options;
 
-    echo $wpbizplugins_eaqm_options['menu_welcometext'];
+    echo wpautop( $wpbizplugins_eaqm_options['menu_welcometext'] );
     echo '<hr />';
     
     $args = array(
