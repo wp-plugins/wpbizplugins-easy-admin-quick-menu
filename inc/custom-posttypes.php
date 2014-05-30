@@ -34,6 +34,10 @@ function wpbizpluins_eaqm_custom_post_menu() {
     // Abort if we're not in an admin page
     if( !is_admin() ) return false;
 
+    global $wpbizplugins_eaqm_options;
+
+    if( current_user_can( $wpbizplugins_eaqm_options['menu_capability'] ) ) $show_in_menu = true; else $show_in_menu = false;
+
     $labels = array(
         'name'               => _x( 'Menu buttons', 'post type general name' ),
         'singular_name'      => _x( 'Menu button', 'post type singular name' ),
@@ -55,7 +59,7 @@ function wpbizpluins_eaqm_custom_post_menu() {
         'description'           => 'The Easy Admin Quick Menu.',
         'public'                => false,
         'show_ui'               => true,
-        'show_in_menu'          => true,
+        'show_in_menu'          => $show_in_menu,
         'show_in_admin_bar'     => false,
         'publicly_queryable'    => false,
         'menu_icon'             => plugins_url( '../assets/img/wpbizplugins-eaqm-menuicon.png', __FILE__ ),
