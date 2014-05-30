@@ -166,6 +166,17 @@ if (!class_exists('WPBizPlugins_EasyAdminQuickMenu_Config')) {
                      * Easy Admin Quick Menu configuration
                      *
                      */
+
+                    array(
+                        'id'       => 'menu_capability',
+                        'type'     => 'select',
+                        'title'    => __('Capability required', 'wpbizplugins-eaqm'),
+                        'subtitle' => __('The capability required to edit the menu', 'wpbizplugins-eaqm'),
+                        'desc'     => __('Set the capability required for editing the menu contents here. Use to restrict access for your clients.', 'wpbizplugins-eaqm'),
+                        // Must provide key => value pairs for select options
+                        'options'  => wpbizplugins_eaqm_return_capabilities_array(),
+                        'default'  => 'delete_plugins',
+                    ),
                     
                     array(
                         'id'       => 'menu_title',
@@ -388,7 +399,7 @@ if (!class_exists('WPBizPlugins_EasyAdminQuickMenu_Config')) {
                 // OPTIONAL -> Give you extra features
                 'page_priority'     => null,                    // Order where the menu appears in the admin area. If there is any conflict, something will not show. Warning.
                 'page_parent'       => 'edit.php?post_type=wpbizplugins-eaqm',            // For a full list of options, visit: http://codex.wordpress.org/Function_Reference/add_submenu_page#Parameters
-                'page_permissions'  => 'manage_options',        // Permissions needed to access the options panel.
+                'page_permissions'  => 'install_plugins',        // Permissions needed to access the options panel.
                 'menu_icon'         => '',                       // Specify a custom URL to an icon
                 'last_tab'          => '',                      // Force your panel to always open to a specific tab (by id)
                 'page_icon'         => 'icon-themes',           // Icon displayed in the admin panel next to your menu_title

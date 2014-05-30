@@ -34,6 +34,10 @@ function wpbizpluins_eaqm_custom_post_menu() {
     // Abort if we're not in an admin page
     if( !is_admin() ) return false;
 
+    global $wpbizplugins_eaqm_options;
+
+    if( current_user_can( $wpbizplugins_eaqm_options['menu_capability'] ) ) $show_in_menu = true; else $show_in_menu = false;
+
     $labels = array(
         'name'               => _x( 'Menu buttons', 'post type general name' ),
         'singular_name'      => _x( 'Menu button', 'post type singular name' ),
@@ -55,14 +59,13 @@ function wpbizpluins_eaqm_custom_post_menu() {
         'description'           => 'The Easy Admin Quick Menu.',
         'public'                => false,
         'show_ui'               => true,
-        'show_in_menu'          => true,
+        'show_in_menu'          => $show_in_menu,
         'show_in_admin_bar'     => false,
         'publicly_queryable'    => false,
         'menu_icon'             => plugins_url( '../assets/img/wpbizplugins-eaqm-menuicon.png', __FILE__ ),
         'menu_position'         => null,
         'supports'              => array( 'title' ),
-        'has_archive'           => false,
-        'taxonomies'            => '',//array( 'wpbizplugins-eaqm-sections' ),
+        'has_archive'           => false
     );
     register_post_type( 'wpbizplugins-eaqm', $args );   
 }
@@ -302,7 +305,14 @@ function wpbizplugins_eaqm_load_custom_fields() {
                     'name' => 'button_color',
                     'type' => 'radio',
                     'instructions' => __('Select the button color that you want for this entry.', 'wpbizplugins-eaqm'),
-                    'choices' => wpbizplugins_eaqm_return_button_array(),
+                    'choices' => array(
+
+                        'blue'      => 'Blue',
+                        'green'     => 'Green',
+                        'orange'    => 'Orange',
+                        'red'       => 'Red'
+                        
+                        ),
                     'other_choice' => 0,
                     'save_other_choice' => 0,
                     'default_value' => '',
