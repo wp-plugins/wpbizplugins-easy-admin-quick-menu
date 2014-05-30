@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MF5MU
 Tags: admin, quick menu, admin menu, quick, menu, client menu, simplify wordpress, simple, wpbizplugins
 Requires at least: 3.7
 Tested up to: 3.9.1
-Stable tag: 1.2
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,6 +71,8 @@ Awesome! Shoot me an e-mail at <a href="mailto:support@wpbizplugins.com?subject=
 * Fixed an annoying warning.
 = 1.2 =
 * Added feature: Allows you to select what capability the user needs to be able to edit the menu and the menu options.
+= 1.2.1 =
+* Small bugfix: Run content through autop, to make it look as intended with paragraphs etc.
 == Upgrade Notice ==
 
 
