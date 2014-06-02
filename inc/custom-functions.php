@@ -205,7 +205,7 @@ function wpbizplugins_eaqm_return_post_type() {
     elseif( isset( $_REQUEST['post_type'] ) )
         return sanitize_key( $_REQUEST['post_type'] );
 
-    elseif (get_post_type($_REQUEST['post']))
+    elseif( ( isset( $_REQUEST['post'] ) ) && ( get_post_type( $_REQUEST['post'] ) ) )
             return get_post_type($_REQUEST['post']);
     //we do not know the post type!
     return null;

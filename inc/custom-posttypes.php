@@ -209,7 +209,7 @@ function wpbizplugins_eaqm_print_styles( $should_return_string = false ) {
  *
  */
 
-function wpbizplugins_eaqm_updated_messages() {
+function wpbizplugins_eaqm_updated_messages( $messages ) {
 
     global $post, $post_ID;
 
