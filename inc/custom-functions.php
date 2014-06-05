@@ -170,7 +170,7 @@ function wpbizplugins_eaqm_return_button_array() {
 
 function wpbizplugins_eaqm_return_icon_styles () {
 
-    $return_string = '<style>div#acf-icon.field ul.acf-radio-list li label input { display: none; } .wpbizplugins-eaqm-iconmap:after { font: 400 30px/1 dashicons !important; content: "\f100"; margin:10px 10px 10px 10px;} .wpbizplugins-eaqm-iconmap:hover { color: #2EA2CC; }</style>';
+    $return_string = '<style>.wpbizplugins-eaqm-iconmap:after { font: 400 30px/1 dashicons !important; content: "\f100"; margin:10px 10px 10px 10px;} .wpbizplugins-eaqm-iconmap:hover { color: #2EA2CC; }</style>';
 
     return $return_string;
 

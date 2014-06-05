@@ -335,7 +335,7 @@ function wpbizplugins_eaqm_load_custom_fields() {
                     'label' => 'Bottom message',
                     'name' => '',
                     'type' => 'message',
-                    'message' => __('All done!', 'wpbizplugins-eaqm') . '<div><a href="http://www.wpbizplugins.com" target="_blank"><img style="margin-top: 20px; margin-bottom: 20px;" src="' . plugins_url( '../assets/img/wpbizplugins-footer-img.png', __FILE__ ) . '"></a></div>' . wpbizplugins_eaqm_return_jquery_for_icon_select(),
+                    'message' => __('All done!', 'wpbizplugins-eaqm') . '<div><a href="http://www.wpbizplugins.com" target="_blank"><img style="margin-top: 20px; margin-bottom: 20px;" src="' . plugins_url( '../assets/img/wpbizplugins-footer-img.png', __FILE__ ) . '"></a></div>',
                 ),
             ),
             'location' => array (
