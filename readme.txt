@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MF5MU
 Tags: admin, quick menu, admin menu, quick, menu, client menu, simplify wordpress, simple, wpbizplugins
 Requires at least: 3.7
 Tested up to: 3.9.1
-Stable tag: 1.1
+Stable tag: 1.2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,7 +63,20 @@ Awesome! Shoot me an e-mail at <a href="mailto:support@wpbizplugins.com?subject=
 * Added support for toggling opening button links in new window
 * Fixed minor warnings and notices
 * Upgraded the embedded ReduxFramework to the latest version
-
+= 1.1.1 =
+* Fixed embarassing include miss with Redux... Sorry!
+= 1.1.2 =
+* Reverted back from having actual buttons as selectors as that for some reason stopped working. Now using normal radio buttons. Keep It Simple Stupid!
+= 1.1.3 =
+* Fixed an annoying warning.
+= 1.2 =
+* Added feature: Allows you to select what capability the user needs to be able to edit the menu and the menu options.
+= 1.2.1 =
+* Small bugfix: Run content through autop, to make it look as intended with paragraphs etc.
+= 1.2.2 =
+* Two small bugfixes: This removes an annoying notice, and stops the plugin from hijacking the custom post type updated messages, which occasionally made other custom post type custom messages disappear... That one took me some time to figure out... ;)
+= 1.2.3 =
+* Another small bugfix. Reverted back to a normal icon select. No fancy stuff, KISS yet again...
 == Upgrade Notice ==
 
 
