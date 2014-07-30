@@ -1,0 +1,280 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPBizPlugins Easy Admin Quick Menu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-14 15:57+0100\n"
+"PO-Revision-Date: 2014-07-25 09:48+0100\n"
+"Last-Translator: jelena kovacevic <jecajeca260@gmail.com>\n"
+"Language-Team: WPBizPlugins <gabriel@wpbizplugins.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: ../\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: inc\n"
+
+#: inc/redux-config.php:110
+msgid "Section via hook"
+msgstr "Sección a través del hook"
+
+#: inc/redux-config.php:111
+msgid ""
+"<p class=\"description\">This is a section created by adding a filter to the "
+"sections array. Can be used by child themes to add/remove sections from the "
+"options.</p>"
+msgstr ""
+"<p class=\"description\">Esta es una sección creada por la adición de un "
+"filtro al arreglo de secciones. Puede ser utilizado por los temas hijos para "
+"añadir/quitar secciones de las opciones.</p>"
+
+#: inc/redux-config.php:159
+msgid "Menu configuration"
+msgstr "Configuración del menú "
+
+#: inc/redux-config.php:160
+msgid "Configure the menu here."
+msgstr "Configure el menú aquí."
+
+#: inc/redux-config.php:173
+msgid "Menu title"
+msgstr "Título del Menú "
+
+#: inc/redux-config.php:174
+msgid "The title of the dashboard widget containing the menu."
+msgstr "El título del widget del Dashboard que contiene el menú."
+
+#: inc/redux-config.php:181
+msgid "Welcome text"
+msgstr "Texto de Bienvenida"
+
+#: inc/redux-config.php:182
+msgid "The welcome text for the menu. Appears before the actual menu."
+msgstr "El texto de bienvenida para el menú. Aparece antes que el menú real."
+
+#: inc/redux-config.php:184
+msgid ""
+"Keep your descriptive texts short and informative. Example of a welcome text "
+"for a client:"
+msgstr ""
+"Mantenga sus textos descriptivos cortos e informativos. Ejemplo de un texto "
+"de bienvenida para un cliente:"
+
+#: inc/redux-config.php:184
+msgid "Use the menu below to administer your website."
+msgstr "Utilice el menú de abajo para administrar su sitio web."
+
+#: inc/redux-config.php:197
+msgid "Visual configuration"
+msgstr "Configuración visual"
+
+#: inc/redux-config.php:198
+msgid "Configure how the menu and menu entries look."
+msgstr "Configura el aspecto de las entradas del menú y del menú."
+
+#: inc/redux-config.php:211
+msgid "Size of the icons"
+msgstr "Tamaño de los iconos"
+
+#: inc/redux-config.php:212
+msgid "Control the size of the icons displayed on the menu buttons."
+msgstr "Controla el tamaño de los iconos que aparecen en los botones del menú."
+
+#: inc/redux-config.php:213 inc/redux-config.php:226 inc/redux-config.php:239
+#: inc/redux-config.php:272
+msgid "Default:"
+msgstr "Por Defecto:"
+
+#: inc/redux-config.php:224
+msgid "Size of the title text"
+msgstr "Tamaño del texto del título"
+
+#: inc/redux-config.php:225
+msgid "Control the size of the title text displayed on the menu buttons."
+msgstr ""
+"Controla el tamaño del texto del título que aparece en los botones del menú."
+
+#: inc/redux-config.php:237
+msgid "Vertical space between buttons"
+msgstr "Espacio vertical entre los botones"
+
+#: inc/redux-config.php:238
+msgid "Control the vertical space between the buttons."
+msgstr "Controla el espacio vertical entre los botones."
+
+#: inc/redux-config.php:270
+msgid "Rounding of button corners"
+msgstr "Redondear las esquinas del botón"
+
+#: inc/redux-config.php:271
+msgid "Control the rounding of the button corners."
+msgstr "Controla el redondeo de las esquinas de los botones."
+
+#: inc/redux-config.php:285
+msgid "Warning"
+msgstr "Advertencia"
+
+#: inc/redux-config.php:286
+msgid "Only edit the custom CSS if you know what you are doing."
+msgstr "Sólo edite el CSS personalizado si usted sabe lo que está haciendo."
+
+#: inc/redux-config.php:292
+msgid "Custom CSS Code"
+msgstr "Código CSS personalizado"
+
+#: inc/redux-config.php:293
+msgid "Put your custom CSS code here."
+msgstr "Ponga su código CSS personalizado aquí."
+
+#: inc/redux-config.php:297
+msgid "Available CSS selectors"
+msgstr "Selectores de CSS disponibles"
+
+#: inc/redux-config.php:298
+msgid "The dashboard widget holding the entire menu."
+msgstr "El widget de Dashboard que contiene todo el menú."
+
+#: inc/redux-config.php:299
+msgid "All the buttons have this class."
+msgstr "Todos los botones tienen esta clase."
+
+#: inc/redux-config.php:300
+msgid "All the icons have this class."
+msgstr "Todos los iconos tienen esta clase."
+
+#: inc/redux-config.php:313
+msgid "Import / Export"
+msgstr "Importar/Exportar"
+
+#: inc/redux-config.php:314
+msgid "Import and Export the menu settings from file, text or URL."
+msgstr "Importar y exportar la configuración del menú de archivo, texto o URL."
+
+#: inc/redux-config.php:332
+msgid "Documentation"
+msgstr "Documentación"
+
+#: inc/redux-config.php:375
+msgid "Configuration"
+msgstr "Configuración"
+
+#: inc/redux-config.php:376
+msgid "Easy Admin Quick Menu Options"
+msgstr "Opciones del Menú de Fácil y Rápida Administración"
+
+#: inc/redux-config.php:456
+msgid ""
+"Welcome to the Easy Admin Quick Menu configuration. Configure everything "
+"needed for the display of the menu here."
+msgstr ""
+"Bienvenido a la configuración del Menú de Fácil y Rápida Administración. "
+"Configure todo lo necesario para la visualización del menú aquí."
+
+#: inc/custom-posttypes.php:38
+msgid "Menu buttons"
+msgstr "Botones del menú"
+
+#: inc/custom-posttypes.php:39
+msgid "Menu button"
+msgstr "Botón del menú"
+
+#: inc/custom-posttypes.php:40 inc/custom-posttypes.php:41
+msgid "Add new menu button"
+msgstr "Añadir un nuevo botón del menú"
+
+#: inc/custom-posttypes.php:42
+msgid "Edit menu button"
+msgstr "Editar botón del menú"
+
+#: inc/custom-posttypes.php:43
+msgid "New menu button"
+msgstr "Nuevo botón del menú"
+
+#: inc/custom-posttypes.php:44
+msgid "All menu buttons"
+msgstr "Todos los botones del menú"
+
+#: inc/custom-posttypes.php:45
+msgid "See menu buttons"
+msgstr "Ver los botones del menú"
+
+#: inc/custom-posttypes.php:46
+msgid "Search menu"
+msgstr "Menú de búsqueda"
+
+#: inc/custom-posttypes.php:47
+msgid "No menu button found"
+msgstr "No se encuentra el botón del menú"
+
+#: inc/custom-posttypes.php:48
+msgid "No menu buttons found in the trash"
+msgstr "No se encontraron botones del menú en la papelera"
+
+#: inc/custom-posttypes.php:215 inc/custom-posttypes.php:216
+#: inc/custom-posttypes.php:217 inc/custom-posttypes.php:218
+msgid "Menu button updated."
+msgstr "Botón del menú actualizado. "
+
+#: inc/custom-posttypes.php:221 inc/custom-posttypes.php:223
+msgid "Menu button added."
+msgstr "Botón del menú adicionado."
+
+#: inc/custom-posttypes.php:222
+msgid "Menu button saved."
+msgstr "Botón del menú guardado."
+
+#: inc/custom-posttypes.php:227
+msgid "Draft of menu button saved."
+msgstr "Borrados del botón del menú salvado."
+
+#: inc/custom-posttypes.php:269
+msgid ""
+"You can add a short description of what the button does here. The contents "
+"of this field gets displayed under the title on the button."
+msgstr ""
+"Usted puede añadir una breve descripción de lo que hace el botón aquí. El "
+"contenido de este campo se muestra bajo el título del botón."
+
+#: inc/custom-posttypes.php:281
+msgid "Put the URL you want to link to here."
+msgstr "Ponga la URL con la que desea establecer el vínculo aquí."
+
+#: inc/custom-posttypes.php:281
+msgid ""
+"<em>Tip:</em> Right-click and select Copy Link Location or similarly on any "
+"link in the admin menu to get the URL for that specific page."
+msgstr ""
+"<em>Consejo:</em> Haga clic derecho y seleccione Copiar Ubicación del Enlace "
+"o similar en cualquier enlace en el menú de administración para obtener la "
+"URL de esa página específica."
+
+#: inc/custom-posttypes.php:294
+msgid "Select the button color that you want for this entry."
+msgstr "Seleccione el color del botón que desea para esta entrada."
+
+#: inc/custom-posttypes.php:306
+msgid "Choose an icon for your button below."
+msgstr "Elija un icono para el botón de abajo."
+
+#: inc/custom-posttypes.php:318
+msgid "All done!"
+msgstr "¡Ya está!"
+
+#: inc/custom-posttypes.php:370
+msgid ""
+"Fill in the fields on this page, select your button color and select an "
+"icon. Then simply press publish and you have a shiny new button for your "
+"quick menu!"
+msgstr ""
+"Complete los campos de esta página, seleccione el color del botón y "
+"seleccione un icono. ¡Entonces sólo tiene que pulsar publicar y tiene un "
+"botón nuevo y brillante para su menú rápido!"
+
+#: inc/custom-posttypes.php:372
+msgid "Title"
+msgstr "Título"
+
+#: inc/custom-posttypes.php:372
+msgid "Enter the title of your button here."
+msgstr "Escriba el título de su botón aquí."
