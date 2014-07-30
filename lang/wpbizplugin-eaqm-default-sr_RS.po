@@ -1,0 +1,279 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPBizPlugins Easy Admin Quick Menu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-14 15:57+0100\n"
+"PO-Revision-Date: 2014-07-22 09:38+0100\n"
+"Last-Translator: Borisa Djuraskovic <borisad@webhostinghub.com>\n"
+"Language-Team: WPBizPlugins <gabriel@wpbizplugins.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: ../\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SearchPath-0: inc\n"
+
+#: inc/redux-config.php:110
+msgid "Section via hook"
+msgstr "Section via hook"
+
+#: inc/redux-config.php:111
+msgid ""
+"<p class=\"description\">This is a section created by adding a filter to the "
+"sections array. Can be used by child themes to add/remove sections from the "
+"options.</p>"
+msgstr ""
+"<p class=\"description\">Ovaj odeljak nastaje dodavanjem filtera nizu "
+"odeljaka. Može se upotrebiti za podređene teme za dodavanje/uklanjanje "
+"odeljaka iz menija opcija.</p>"
+
+#: inc/redux-config.php:159
+msgid "Menu configuration"
+msgstr "Konfiguracija menija"
+
+#: inc/redux-config.php:160
+msgid "Configure the menu here."
+msgstr "Ovde konfigurišite meni"
+
+#: inc/redux-config.php:173
+msgid "Menu title"
+msgstr "Naslov menija"
+
+#: inc/redux-config.php:174
+msgid "The title of the dashboard widget containing the menu."
+msgstr "Naslov widget-a kontrolne table koji sadrži meni."
+
+#: inc/redux-config.php:181
+msgid "Welcome text"
+msgstr "Tekst dobrodošlice"
+
+#: inc/redux-config.php:182
+msgid "The welcome text for the menu. Appears before the actual menu."
+msgstr "Tekst dobrodošlice za meni. Pojavljuje se pre pravog menija."
+
+#: inc/redux-config.php:184
+msgid ""
+"Keep your descriptive texts short and informative. Example of a welcome text "
+"for a client:"
+msgstr ""
+"Neka vaši opisni tekstovi budu kratki i informativni. Primer teksta "
+"dobrodošlice za klijenta:"
+
+#: inc/redux-config.php:184
+msgid "Use the menu below to administer your website."
+msgstr "Koristite sledeći meni da biste upravljali svojim web site-om."
+
+#: inc/redux-config.php:197
+msgid "Visual configuration"
+msgstr "Vizuelna konfiguracija"
+
+#: inc/redux-config.php:198
+msgid "Configure how the menu and menu entries look."
+msgstr "Konfigurišite izgled menija i unosa menija."
+
+#: inc/redux-config.php:211
+msgid "Size of the icons"
+msgstr "Veličina ikonica"
+
+#: inc/redux-config.php:212
+msgid "Control the size of the icons displayed on the menu buttons."
+msgstr "Odredite veličinu ikonica prikazanih na tasterima menija"
+
+#: inc/redux-config.php:213 inc/redux-config.php:226 inc/redux-config.php:239
+#: inc/redux-config.php:272
+msgid "Default:"
+msgstr "Podrazumevani:"
+
+#: inc/redux-config.php:224
+msgid "Size of the title text"
+msgstr "Veličina naslova teksta"
+
+#: inc/redux-config.php:225
+msgid "Control the size of the title text displayed on the menu buttons."
+msgstr "Odredite veličinu teksta naslova prikazanog na tasterima menija."
+
+#: inc/redux-config.php:237
+msgid "Vertical space between buttons"
+msgstr "Vertikalni razmak između tastera"
+
+#: inc/redux-config.php:238
+msgid "Control the vertical space between the buttons."
+msgstr "Upravljajte vertikalnim razmakom između tastera."
+
+#: inc/redux-config.php:270
+msgid "Rounding of button corners"
+msgstr "Zaobljavanje uglova tastera"
+
+#: inc/redux-config.php:271
+msgid "Control the rounding of the button corners."
+msgstr "Kontrolišite zaobljavanje uglova tastera"
+
+#: inc/redux-config.php:285
+msgid "Warning"
+msgstr "Upozorenje"
+
+#: inc/redux-config.php:286
+msgid "Only edit the custom CSS if you know what you are doing."
+msgstr "Uređujte prilagođeni CSS samo ako znate šta radite."
+
+#: inc/redux-config.php:292
+msgid "Custom CSS Code"
+msgstr "Prilagođeni CSS kod"
+
+#: inc/redux-config.php:293
+msgid "Put your custom CSS code here."
+msgstr "Ovde unesite svoj prilagođeni CSS kod"
+
+#: inc/redux-config.php:297
+msgid "Available CSS selectors"
+msgstr "Raspoloživi CSS selektori"
+
+#: inc/redux-config.php:298
+msgid "The dashboard widget holding the entire menu."
+msgstr "Widget kontrolne table sadrži celokupni meni."
+
+#: inc/redux-config.php:299
+msgid "All the buttons have this class."
+msgstr "Svi tasteri imaju ovu klasu"
+
+#: inc/redux-config.php:300
+msgid "All the icons have this class."
+msgstr "Sve ikonice imaju ovu klasu"
+
+#: inc/redux-config.php:313
+msgid "Import / Export"
+msgstr "Uvoz/Izvoz"
+
+#: inc/redux-config.php:314
+msgid "Import and Export the menu settings from file, text or URL."
+msgstr "Uvezite i Izvezite postavke menija iz datoteke, teksta ili URL-a. "
+
+#: inc/redux-config.php:332
+msgid "Documentation"
+msgstr "Dokumentacija"
+
+#: inc/redux-config.php:375
+msgid "Configuration"
+msgstr "Konfiguracija"
+
+#: inc/redux-config.php:376
+msgid "Easy Admin Quick Menu Options"
+msgstr "Opcije za brzi i laki meni administratora"
+
+#: inc/redux-config.php:456
+msgid ""
+"Welcome to the Easy Admin Quick Menu configuration. Configure everything "
+"needed for the display of the menu here."
+msgstr ""
+"Dobro došli u konfiguraciju brzog i lakog menija administratora. Ovde "
+"podesite sve što vam je potrebno za prikazivanje menija."
+
+#: inc/custom-posttypes.php:38
+msgid "Menu buttons"
+msgstr "Tasteri menija"
+
+#: inc/custom-posttypes.php:39
+msgid "Menu button"
+msgstr "Taster menija"
+
+#: inc/custom-posttypes.php:40 inc/custom-posttypes.php:41
+msgid "Add new menu button"
+msgstr "Dodaj novi taster menija"
+
+#: inc/custom-posttypes.php:42
+msgid "Edit menu button"
+msgstr "Uredi novi taster"
+
+#: inc/custom-posttypes.php:43
+msgid "New menu button"
+msgstr "Novi taster menija"
+
+#: inc/custom-posttypes.php:44
+msgid "All menu buttons"
+msgstr "Svi tasteri menija"
+
+#: inc/custom-posttypes.php:45
+msgid "See menu buttons"
+msgstr "Vidi tastere menija"
+
+#: inc/custom-posttypes.php:46
+msgid "Search menu"
+msgstr "Pretraži meni"
+
+#: inc/custom-posttypes.php:47
+msgid "No menu button found"
+msgstr "Taster menija nije pronađen"
+
+#: inc/custom-posttypes.php:48
+msgid "No menu buttons found in the trash"
+msgstr "U korpi za otpatke nema tastera menija"
+
+#: inc/custom-posttypes.php:215 inc/custom-posttypes.php:216
+#: inc/custom-posttypes.php:217 inc/custom-posttypes.php:218
+msgid "Menu button updated."
+msgstr "Taster menija ažuriran"
+
+#: inc/custom-posttypes.php:221 inc/custom-posttypes.php:223
+msgid "Menu button added."
+msgstr "Taster menija dodat"
+
+#: inc/custom-posttypes.php:222
+msgid "Menu button saved."
+msgstr "Taster menija sačuvan"
+
+#: inc/custom-posttypes.php:227
+msgid "Draft of menu button saved."
+msgstr "Skica tastera menija sačuvana."
+
+#: inc/custom-posttypes.php:269
+msgid ""
+"You can add a short description of what the button does here. The contents "
+"of this field gets displayed under the title on the button."
+msgstr ""
+"Ovde možete navesti kratak opis o funkciji tastera. Sadržaj ovog polja "
+"prikazuje se ispod naziva na tasteru."
+
+#: inc/custom-posttypes.php:281
+msgid "Put the URL you want to link to here."
+msgstr "Unesite URL koji želite da povežete "
+
+#: inc/custom-posttypes.php:281
+msgid ""
+"<em>Tip:</em> Right-click and select Copy Link Location or similarly on any "
+"link in the admin menu to get the URL for that specific page."
+msgstr ""
+"<em>Tip:</em> Kliknite na desni taster miša i odaberite opciju “Kopiraj "
+"lokaciju linka” (ili neku sličnu opciju) u meniju administratora da biste "
+"dobili URL za određenu stranicu."
+
+#: inc/custom-posttypes.php:294
+msgid "Select the button color that you want for this entry."
+msgstr "Odaberite boju tastera koji želite za ovaj unos."
+
+#: inc/custom-posttypes.php:306
+msgid "Choose an icon for your button below."
+msgstr "Odaberite ikonicu za donji taster. "
+
+#: inc/custom-posttypes.php:318
+msgid "All done!"
+msgstr "Sve je urađeno!"
+
+#: inc/custom-posttypes.php:370
+msgid ""
+"Fill in the fields on this page, select your button color and select an "
+"icon. Then simply press publish and you have a shiny new button for your "
+"quick menu!"
+msgstr ""
+"Popunite polja na ovoj stranici, odaberite boju tastera i ikonicu. Zatim, "
+"jednostavno, kliknite na opciju “Objavi” i dobili ste sjajan novi taster za "
+"svoj brzi meni!"
+
+#: inc/custom-posttypes.php:372
+msgid "Title"
+msgstr "Naziv"
+
+#: inc/custom-posttypes.php:372
+msgid "Enter the title of your button here."
+msgstr "Ovde unesite naziv tastera"
