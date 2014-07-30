@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MF5MU
 Tags: admin, quick menu, admin menu, quick, menu, client menu, simplify wordpress, simple, wpbizplugins
 Requires at least: 3.7
 Tested up to: 3.9.1
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,6 +77,8 @@ Awesome! Shoot me an e-mail at <a href="mailto:support@wpbizplugins.com?subject=
 * Two small bugfixes: This removes an annoying notice, and stops the plugin from hijacking the custom post type updated messages, which occasionally made other custom post type custom messages disappear... That one took me some time to figure out... ;)
 = 1.2.3 =
 * Another small bugfix. Reverted back to a normal icon select. No fancy stuff, KISS yet again...
+= 1.2.4 =
+* Serbian and Spanish translation added, courtesy of Ogi et al from firstsiteguide.com. Thanks!
 == Upgrade Notice ==
 
 
