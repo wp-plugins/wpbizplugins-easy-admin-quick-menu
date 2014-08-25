@@ -45,12 +45,13 @@ function wpbizplugins_eaqm_widget_function() {
 
     global $wpbizplugins_eaqm_options;
 
-    echo wpautop( $wpbizplugins_eaqm_options['menu_welcometext'] );
+    echo apply_filters( 'the_content', $wpbizplugins_eaqm_options['menu_welcometext'] );
     echo '<hr />';
     
     $args = array(
     
-        'post_type' => 'wpbizplugins-eaqm'
+        'post_type'         => 'wpbizplugins-eaqm',
+        'posts_per_page'    => -1
         
     );
 
@@ -75,6 +76,8 @@ function wpbizplugins_eaqm_widget_function() {
         }
 
     }
+
+    wp_reset_postdata();
 
     unset($wpbizplugins_eaqm_options);
 }

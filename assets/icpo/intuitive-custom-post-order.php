@@ -37,12 +37,12 @@ Author URI: http://hijiriworld.com/web/
 
 ***************************************************************/
 
-define( 'HICPO_URL', plugins_url('', __FILE__) );
+define( 'HICPO_WPBIZPLUGINS_URL', plugins_url('', __FILE__) );
 
-define( 'HICPO_DIR', plugin_dir_path(__FILE__) );
+define( 'HICPO_WPBIZPLUGINS_DIR', plugin_dir_path(__FILE__) );
 
 // Define a static post type for this.
-define( 'HICPO_POST_TYPE', 'wpbizplugins-eaqm' );
+define( 'HICPO_WPBIZPLUGINS_POST_TYPE', 'wpbizplugins-eaqm' );
 
 
 /***************************************************************
@@ -58,7 +58,7 @@ class Hicpo_EAQM
 	function __construct()
 	{
 	
-		if( wpbizplugins_eaqm_return_post_type() == HICPO_POST_TYPE ) {
+		if( wpbizplugins_eaqm_return_post_type() == HICPO_WPBIZPLUGINS_POST_TYPE ) {
 			add_action( 'admin_init', array( &$this, 'refresh' ) );
 			add_action( 'admin_init', array( &$this, 'load_script_css' ) );
 		}
@@ -81,9 +81,9 @@ class Hicpo_EAQM
 		// load JavaScript
 		wp_enqueue_script( 'jQuery' );
 		wp_enqueue_script( 'jquery-ui-sortable' );
-		wp_enqueue_script( 'hicpojs', HICPO_URL.'/js/hicpo.js', array( 'jquery' ), null, true );
+		wp_enqueue_script( 'hicpojs', HICPO_WPBIZPLUGINS_URL.'/js/hicpo.js', array( 'jquery' ), null, true );
 		// load CSS
-		wp_enqueue_style( 'hicpo', HICPO_URL.'/css/hicpo.css', array(), null );
+		wp_enqueue_style( 'hicpo', HICPO_WPBIZPLUGINS_URL.'/css/hicpo.css', array(), null );
 
 	}
 	
@@ -93,7 +93,7 @@ class Hicpo_EAQM
 		// menu_orderを再構築する
 		global $wpdb;
 		
-		$object = HICPO_POST_TYPE;
+		$object = HICPO_WPBIZPLUGINS_POST_TYPE;
 		
 		$sql = "SELECT
 					ID
@@ -196,7 +196,7 @@ class Hicpo_EAQM
 	
 	function hicpo_pre_get_posts( $wp_query )
 	{
-		$objects[] = HICPO_POST_TYPE;
+		$objects[] = HICPO_WPBIZPLUGINS_POST_TYPE;
 
 		if ( is_array( $objects ) ) {
 		

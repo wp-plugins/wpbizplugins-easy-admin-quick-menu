@@ -37,8 +37,8 @@
 
 function wpbizplugins_eaqm_print_button_style( $color_name, $color_main, $color_border_and_hover, $color_text_shadow, $should_return_string = false ) {
 
-    $return_string = '.btn-' . $color_name . ' { background-color:' . $color_main . ' !important; border:1px solid ' . $color_border_and_hover . ' !important; text-shadow:0px 0px 3px ' . $color_text_shadow . ' !important; }
-    .btn-' . $color_name . ':hover { background-color:' . $color_border_and_hover . ' !important; }';
+    $return_string = '.btn-' . $color_name . ' { background-color:' . $color_main . '; border:1px solid ' . $color_border_and_hover . '; text-shadow:0px 0px 3px ' . $color_text_shadow . '; }
+    .btn-' . $color_name . ':hover { background-color:' . $color_border_and_hover . '; }';
 
     if( $should_return_string == true ) return $return_string; else echo $return_string;
 }
@@ -68,7 +68,7 @@ function wpbizplugins_eaqm_print_button( $color, $icon, $title, $subtitle, $url,
     $css_id .= uniqid();
 
     // Print the initial style needed
-    $return_string = '<style>#' . $css_id . ':before { content: "\f' . $icon . '" !important; }</style>';
+    $return_string = '<style>#' . $css_id . ':before { content: "\f' . $icon . '"; }</style>';
 
     // Print the actual button
     $return_string .= 
@@ -103,7 +103,7 @@ function wpbizplugins_eaqm_return_icon( $icon ) {
 
     // Print the needed style
     $return_string = 
-        '<style>#' . $css_id . ':after { content: "\f' . $icon . '" !important; }</style>' .
+        '<style>#' . $css_id . ':after { content: "\f' . $icon . '"; }</style>' .
         '<span class="wpbizplugins-eaqm-iconmap" id="' . $css_id . '"><br /></span>';
 
     return $return_string;
@@ -170,7 +170,7 @@ function wpbizplugins_eaqm_return_button_array() {
 
 function wpbizplugins_eaqm_return_icon_styles () {
 
-    $return_string = '<style>.wpbizplugins-eaqm-iconmap:after { font: 400 30px/1 dashicons !important; content: "\f100"; margin:10px 10px 10px 10px;} .wpbizplugins-eaqm-iconmap:hover { color: #2EA2CC; }</style>';
+    $return_string = '<style>.wpbizplugins-eaqm-iconmap:after { font: 400 30px/1 dashicons; content: "\f100"; margin:10px 10px 10px 10px;} .wpbizplugins-eaqm-iconmap:hover { color: #2EA2CC; }</style>';
 
     return $return_string;
 

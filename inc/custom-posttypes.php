@@ -88,7 +88,7 @@ function wpbizplugins_eaqm_print_styles( $should_return_string = false ) {
     $return_string = '<style>
     .wpbizplugins-eaqm-icon:before { 
 
-        font: 400 ' . $wpbizplugins_eaqm_options['icon_size'] . 'px/1 dashicons !important; 
+        font: 400 ' . $wpbizplugins_eaqm_options['icon_size'] . 'px/1 dashicons; 
         content: "\f100"; 
 
     }
@@ -132,15 +132,15 @@ function wpbizplugins_eaqm_print_styles( $should_return_string = false ) {
 
     .wpbizplugins-eaqm-button:hover { 
         background-color:#6aaaeb; 
-        color: #F6F6F6 !important;
+        color: #F6F6F6;
     }
 
     .wpbizplugins-eaqm-button:active { 
-        color: #F6F6F6 !important;
+        color: #F6F6F6;
     }
 
     .wpbizplugins-eaqm-button:focus { 
-        color: #F6F6F6 !important;
+        color: #F6F6F6;
     }
 
     .wpbizplugins-eaqm-element-selected {
