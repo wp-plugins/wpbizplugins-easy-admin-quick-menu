@@ -3,8 +3,8 @@ Contributors: wpbizplugins
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MF5MU4TNF3UDU&lc=SE&item_name=WPBizPlugins&item_number=Easy%20Admin%20Quick%20Menu&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: admin, quick menu, admin menu, quick, menu, client menu, simplify wordpress, simple, wpbizplugins
 Requires at least: 3.7
-Tested up to: 3.9.1
-Stable tag: 1.2.5
+Tested up to: 4.0
+Stable tag: 1.2.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -79,6 +79,10 @@ Awesome! Shoot me an e-mail at <a href="mailto:support@wpbizplugins.com?subject=
 * Another small bugfix. Reverted back to a normal icon select. No fancy stuff, KISS yet again...
 = 1.2.4 =
 * Serbian and Spanish translation added, courtesy of Ogi et al from firstsiteguide.com. Thanks!
+= 1.2.6 =
+* Bugfix release. Fixes a number of smaller bugs.
+= 1.2.7 =
+* Fix the menu entry occasionally not appearing.
 == Upgrade Notice ==
 
 
