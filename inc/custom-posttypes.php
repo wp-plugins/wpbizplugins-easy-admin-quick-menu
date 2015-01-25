@@ -63,7 +63,7 @@ function wpbizpluins_eaqm_custom_post_menu() {
         'show_in_admin_bar'     => false,
         'publicly_queryable'    => false,
         'menu_icon'             => plugins_url( '../assets/img/wpbizplugins-eaqm-menuicon.png', __FILE__ ),
-        'menu_position'         => null,
+        'menu_position'         => 12,
         'supports'              => array( 'title' ),
         'has_archive'           => false
     );

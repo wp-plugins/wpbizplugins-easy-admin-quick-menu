@@ -254,66 +254,18 @@ function wpbizplugins_eaqm_return_jquery_for_icon_select() {
 
 function wpbizplugins_eaqm_return_capabilities_array() {
 
-    $capabilities_array = array(
-        'activate_plugins',
-        'add_users',
-        'create_users',
-        'delete_others_pages',
-        'delete_others_posts',
-        'delete_pages',
-        'delete_plugins',
-        'delete_posts',
-        'delete_private_pages',
-        'delete_private_posts',
-        'delete_published_pages',
-        'delete_published_posts',
-        'delete_themes',
-        'delete_users',
-        'edit_dashboard',
-        'edit_others_pages',
-        'edit_others_posts',
-        'edit_pages',
-        'edit_plugins',
-        'edit_posts',
-        'edit_private_pages',
-        'edit_private_posts',
-        'edit_published_pages',
-        'edit_published_posts',
-        'edit_theme_options',
-        'edit_themes',
-        'edit_users',
-        'export',
-        'import',
-        'install_plugins',
-        'install_themes',
-        'list_users',
-        'manage_categories',
-        'manage_links',
-        'manage_options',
-        'moderate_comments',
-        'promote_users',
-        'publish_pages',
-        'publish_posts',
-        'read',
-        'read_private_pages',
-        'read_private_posts',
-        'remove_users',
-        'switch_themes',
-        'unfiltered_html',
-        'unfiltered_upload',
-        'update_core',
-        'update_plugins',
-        'update_themes',
-        'upload_files'
-    );
+    global $wp_roles;
 
-    $capabilities_array_keypair = array();
+    if ( ! isset( $wp_roles ) ) {
+        $wp_roles = new WP_Roles();
+    }                
 
-    foreach( $capabilities_array as $capability ) {
+    $capabilities_array = array();
 
-        $capabilities_array_keypair[$capability] = $capability;
-
+    foreach( $wp_roles->roles[ 'administrator' ][ 'capabilities' ] as $capability => $status ) {
+        $capabilities_array[ $capability ] = $capability;
     }
 
-    return $capabilities_array_keypair;
+    return $capabilities_array;
+
 }
